@@ -1,0 +1,22 @@
+meta {
+  name: Actualizar orden
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://127.0.0.1:3080/api/platos/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  { 
+    "ingredienteAdicional": "Papas fritas" 
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

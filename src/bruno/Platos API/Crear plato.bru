@@ -1,0 +1,23 @@
+meta {
+  name: Crear plato
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://127.0.0.1:3080/api/platos
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nombrePlato": "Perro caliente",
+    "ingredienteAdicional": "Con cebolla"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
